@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="loginform" id="loginform" action="/login/" method="POST">
+	{% csrf_token %}
+	Username<input type="text" name="username" id="username"><br>
+	Password<input type="text" name="password" id="password"><br>
+	{% if errors %}
+		<p>Please enter valid username/password</p>
+	{% endif %}
+	<button type="submit">Submit</button>
+</form>
+
+<a href="/google-login/">Google Login</a>
+<a href="/facebook-login/">Facebbok Login</a>
+
+</body>
+</html>
