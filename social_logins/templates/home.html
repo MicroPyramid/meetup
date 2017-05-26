@@ -1,0 +1,37 @@
+<h1>You've successfully loggedin</h1>
+
+{% if user_document %}
+<b>Email</b>: {{user_document.email}}<br>
+
+<b>FirstName</b> : {{user_document.family_name}}<br>
+
+<b>Name</b>: {{user_document.name}}<br>
+
+<b>Gender</b>: {{ user_document.gender }}<br>
+
+<b>dob</b>: {{user_document.birthday}}<br>
+
+<b>Profile Pic</b>: <img src="{{user_document.picture}}" height="100px" width="100px"><br>
+
+{% if user_document.link %}
+<a href="{{user_document.link}}" target="_blank">User Profile Link</a><br>
+{% endif %}
+
+{% else %}
+
+<b>Email</b>: {{profile.email}}<br>
+
+<b>Name</b>: {{profile.name}}<br>
+
+<b>Gender</b>: {{ profile.gender }}<br>
+
+<b>Location</b>: {{ profile.location.name }}<br>
+
+<b>dob</b>: {{profile.birthday}}<br>
+
+<b>Profile Pic</b>: <img src="https://graph.facebook.com/{{profile.id}}/picture?type=large" height="100px" width="100px"><br>
+
+<a href="{{profile.link}}" target="_blank">User Profile Link</a><br>
+
+
+{% endif %}
