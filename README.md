@@ -2,7 +2,7 @@
 
 Here we'll list all the code which we've explained in `Hyderabad Python and Django Meetup Group`_
 
-We welcome your feedback and support, raise `github ticket`_ if you want to report a bug. Need new features? `Contact us here`_
+We welcome your feedback and support, raise `github ticket`_ if you want to report any suggestions. `Contact us here`_
 
     or
 
